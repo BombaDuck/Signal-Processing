@@ -25,7 +25,7 @@ angles=(-90:0.1:90);
 %Compute steering vectors corresponding values in angles
 a1=exp(-i*pi*(0:P-1)'*sin([angles(:).']*pi/180));
 for k=1:length(angles)
-%Compute MUSIC “spectrum?
+%Compute MUSIC â€œspectrum?
 pseudo_spectrum(k)=(a1(:,k)'*a1(:,k))/(a1(:,k)'*Qn*Qn'*a1(:,k));
 end
 %%================================Plot=====================================
